@@ -416,9 +416,9 @@ object VDB
          override def toString = s"Page( + ${p.deep} + )\n" 
     } // page class
 
-                    val cache		 = Array.ofDim [Page]     (pages)	// database cache
-                    val logBuf 		 = ArrayBuffer [LogRec]   ()            // log buffer
-	    private val map    		 = Map         [Int, Int] ()            // map for finding pages in cache (pageNumber -> cpi)
+    val cache		 = Array.ofDim [Page]     (pages)	// database cache
+    val logBuf 		 = ArrayBuffer [LogRec]   ()            // log buffer
+    private val map      = Map         [Int, Int] ()            // map for finding pages in cache (pageNumber -> cpi)
 	    	    
     //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     /** Initialize the cache.
