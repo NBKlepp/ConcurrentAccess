@@ -16,8 +16,8 @@ To run the simulation, navigate to the project root directory and begin the sbt 
 This should bring up the interactive sbt command line:
 
 ```
-/some/directory/ConcurrentAccess $ sbt '
-[info] Set current project to trans (in build file:/Users/MacBot/Projects/DatabaseConcurrencyControl8370/Transactions/)`
+/some/directory/ConcurrentAccess $ sbt
+[info] Set current project to trans (in build file:/some/directory/ConcurrentAccess/)
 >
 ```
 
@@ -25,7 +25,7 @@ From here, the following command will run the simulation with default parameter 
 
 ```
 /some/directory/ConcurrentAccess $ sbt
-[info] Set current project to trans (in build file:/Users/MacBot/Projects/DatabaseConcurrencyControl8370/Transactions/)
+[info] Set current project to trans (in build file:/some/directory/ConcurrentAccess/)
 >run-main trans.VDBTest2
 ```
 
