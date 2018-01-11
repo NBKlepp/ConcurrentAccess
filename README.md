@@ -15,15 +15,15 @@ To run the simulation, navigate to the project root directory and begin the sbt 
 
 This should bring up the interactive sbt command line:
 
-` /some/directory/ConcurrentAccess $ sbt
- [info] Set current project to trans (in build file:/Users/MacBot/Projects/DatabaseConcurrencyControl8370/Transactions/)
- \>`
+` /some/directory/ConcurrentAccess $ sbt '
+` [info] Set current project to trans (in build file:/Users/MacBot/Projects/DatabaseConcurrencyControl8370/Transactions/)`
+` >`
 
 From here, the following command will run the simulation with default parameter settings:
 
-` /some/directory/ConcurrentAccess $ sbt
- [info] Set current project to trans (in build file:/Users/MacBot/Projects/DatabaseConcurrencyControl8370/Transactions/)
- >run-main trans.VDBTest2`
+` /some/directory/ConcurrentAccess $ sbt`
+` [info] Set current project to trans (in build file:/Users/MacBot/Projects/DatabaseConcurrencyControl8370/Transactions/)`
+` >run-main trans.VDBTest2`
 
 The default concurrent access protocol is the strict two-phase locking protocol. The time-stamp odering protocol has also been implemented, and the protocol employed in the simulation may be changed via the 'concurrency' instance variable in the VDBTest2 companion object in the VDB.scala file.
 
